@@ -1,0 +1,20 @@
+xfuser
+torch>=2.0.0
+torchvision
+transformers==4.57.3
+controlnet-aux==0.0.7
+imageio
+imageio[ffmpeg]
+safetensors
+einops
+sentencepiece
+protobuf
+modelscope
+ftfy
+wandb
+deepspeed
+diffsynth==1.1.9
+trimesh
+# flash-attn
+git+https://github.com/facebookresearch/vggt
+matplotlib

@@ -1,3 +1,16 @@
+data
+tmp
+checkpoints
+outputs
+wandb
+results
+slurm
+cache
+.vscode
+.deepspeed_env
+env*
+*logs*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
