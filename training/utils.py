@@ -837,6 +837,9 @@ def fuse_multiview_heatmaps_to_3d_point_torch(
     device = heatmaps.device
     dtype = heatmaps.dtype
 
+    extrinsics = extrinsics.to(device=device, dtype=dtype)
+    intrinsics = intrinsics.to(device=device, dtype=dtype)
+
     # Flatten batch dimensions for easier processing
     batch_size = int(np.prod(batch_dims)) if batch_dims else 1
     heatmaps_flat = heatmaps.reshape(batch_size, V, H, W)
