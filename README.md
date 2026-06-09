@@ -93,6 +93,11 @@ pip install flash-attn --no-build-isolation
 pip install -e .
 ```
 
+Download the base Wan backbone weights from HuggingFace into `./checkpoints/` (required for both training and inference):
+```bash
+hf download Wan-AI/Wan2.2-TI2V-5B --local-dir ./checkpoints/Wan-AI/Wan2.2-TI2V-5B --include "diffusion_pytorch_model*.safetensors" "models_t5_umt5-xxl-enc-bf16*.pth" "Wan*_VAE.pth" "google/*"
+```
+
 ## Data Preparation
 
 Action Images supports multi-view robotic datasets including RLBench, Bridge, and DROID.
